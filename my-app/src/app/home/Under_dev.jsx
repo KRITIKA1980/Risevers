@@ -1,81 +1,250 @@
 "use client";
 
+import React, { useEffect, useState } from "react";
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  CartesianGrid,
+  Cell,
+} from "recharts";
 
-export default function UnderDevelopment() {
-  return (
-  
-    <div className="min-h-screen bg-gradient-to-br from-[#1c2e57] via-[#16325c] to-[#0f1f3a] flex items-center justify-center p-4">
-      <div className="max-w-md w-full text-center">
-        {/* Clean Icon */}
-        <div className="mb-8">
-          <div className="w-24 h-24 bg-white/10 rounded-2xl flex items-center justify-center mx-auto backdrop-blur-sm border border-white/20">
-            <div className="text-4xl">⚙️</div>
-          </div>
-        </div>
+const mockData = [
+  { year: 2021, startup: "AlphaX", layoffs: 100 },
+  { year: 2021, startup: "BetaHub", layoffs: 25 },
+  { year: 2021, startup: "CodeMint", layoffs: 10 },
+  { year: 2022, startup: "AlphaX", layoffs: 50 },
+  { year: 2022, startup: "BetaHub", layoffs: 60 },
+  { year: 2022, startup: "NewWave", layoffs: 15 },
+  { year: 2023, startup: "AlphaX", layoffs: 20 },
+  { year: 2023, startup: "BetaHub", layoffs: 5 },
+  { year: 2023, startup: "NewWave", layoffs: 0 },
+  { year: 2023, startup: "CodeMint", layoffs: 8 },
+  { year: 2024, startup: "NewWave", layoffs: 30 },
+  { year: 2024, startup: "CodeMint", layoffs: 40 },
+  { year: 2024, startup: "BetaHub", layoffs: 10 },
+];
 
-        {/* Main Content */}
-        <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
-          <h1 className="text-3xl font-bold text-white mb-4">
-            Under Development
-          </h1>
-          
-          <p className="text-white/80 text-lg mb-6 leading-relaxed">
-            We are currently working on enhancing our platform. Our services will be available shortly.
+const COLOR_PALETTE = {
+  chart: [
+    "#8b5cf6",
+    "#06b6d4",
+    "#10b981",
+    "#f59e0b",
+    "#ef4444",
+    "#3b82f6",
+    "#f97316",
+    "#84cc16",
+    "#ec4899",
+    "#6366f1",
+  ],
+};
+
+function pivotDataToChart(data) {
+  const years = Array.from(new Set(data.map((d) => d.year))).sort();
+  const startups = Array.from(new Set(data.map((d) => d.startup))).sort();
+  const result = years.map((y) => {
+    const row = { year: String(y) };
+    startups.forEach((s) => {
+      const found = data.find((d) => d.year === y && d.startup === s);
+      row[s] = found ? found.layoffs : 0;
+    });
+    return row;
+  });
+  return { result, startups };
+}
+
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="bg-white p-4 border border-gray-200 rounded-lg shadow-lg">
+        <p className="font-semibold text-gray-800 mb-2">{`Year: ${label}`}</p>
+        {payload.map((entry, index) => (
+          <p key={index} className="text-sm" style={{ color: entry.color }}>
+            {`${entry.dataKey}: ${entry.value}`}
           </p>
+        ))}
+        <p className="text-xs text-gray-500 mt-2">
+          Total: {payload.reduce((sum, entry) => sum + entry.value, 0)}
+        </p>
+      </div>
+    );
+  }
+  return null;
+};
 
-          {/* Apology Message */}
-          <div className="bg-white/5 rounded-xl p-4 mb-6 border border-white/10">
-            <p className="text-white font-medium">
-              Sorry for the inconvenience. We appreciate your patience.
-            </p>
-          </div>
+const LoadingSpinner = () => (
+  <div className="flex items-center justify-center py-8">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
+  </div>
+);
 
-          {/* Services Coming Soon */}
-          <div className="space-y-4 mb-6">
-            <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-              <div className="flex items-center justify-center space-x-3">
-                <div className="text-2xl">👨‍🏫</div>
-                <div>
-                  <h3 className="text-white font-semibold">Mentorship Program</h3>
-                  <p className="text-white/60 text-sm">Professional guidance and support</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-              <div className="flex items-center justify-center space-x-3">
-                <div className="text-2xl">🎯</div>
-                <div>
-                  <h3 className="text-white font-semibold">Scheme Assistance</h3>
-                  <p className="text-white/60 text-sm">Government program guidance</p>
-                </div>
-              </div>
-            </div>
-          </div>
+const AnimatedTableRow = ({ data, index }) => (
+  <tr
+    className="border-b border-gray-100 hover:bg-blue-50 transition-all duration-300 ease-in-out transform hover:scale-[1.01]"
+    style={{
+      animationDelay: `${index * 50}ms`,
+      animation: `fadeInUp 0.5s ease-out ${index * 50}ms both`,
+    }}
+  >
+    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+      {data.year}
+    </td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+      {data.startup}
+    </td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 font-semibold">
+      {data.layoffs}
+    </td>
+  </tr>
+);
 
-          {/* Contact Info */}
-          <div className="bg-white/5 rounded-xl p-5 border border-white/10">
-            <h3 className="text-white font-semibold mb-2">Stay Informed</h3>
-            <p className="text-white/70 text-sm mb-3">We will notify you when we launch</p>
-            
-            <div className="flex flex-col gap-2">
-              <input 
-                type="email" 
-                placeholder="Enter your email address"
-                className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40 text-sm"
-              />
-              <button className="bg-white text-[#1c2e57] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm">
-                Get Notified
-              </button>
-            </div>
-          </div>
+export default function LayoffsPage() {
+  const [raw, setRaw] = useState(mockData);
+  const [chartData, setChartData] = useState([]);
+  const [startups, setStartups] = useState([]);
+  const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [isChartLoading, setIsChartLoading] = useState(false);
 
-          
+  useEffect(() => {
+    setIsChartLoading(true);
+    const { result, startups } = pivotDataToChart(raw);
+    setChartData(result);
+    setStartups(startups);
+    const timer = setTimeout(() => setIsChartLoading(false), 800);
+    return () => clearTimeout(timer);
+  }, [raw]);
+
+  async function fetchFromApi() {
+    setLoading(true);
+    setIsChartLoading(true);
+    try {
+      const res = await fetch("/api/layoffs");
+      if (!res.ok) throw new Error("API error");
+      const data = await res.json();
+      setRaw(data);
+    } catch (err) {
+      console.error(err);
+      alert("Failed to fetch /api/layoffs, using sample data.");
+    } finally {
+      setLoading(false);
+      setTimeout(() => setIsChartLoading(false), 800);
+    }
+  }
+
+  const filtered = raw.filter((r) => {
+    if (!query) return true;
+    const q = query.toLowerCase();
+    return (
+      String(r.year).includes(q) ||
+      r.startup.toLowerCase().includes(q) ||
+      String(r.layoffs).includes(q)
+    );
+  });
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
+      <style jsx global>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
+
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Startup Layoffs Analytics
+          </h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Track and analyze layoff trends across startups by year.
+          </p>
         </div>
 
-        {/* Footer */}
-        <div className="mt-6 text-white/40 text-xs">
-          <p>© 2025 CitizenSetu. All rights reserved.</p>
+        <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
+          <div className="flex flex-col lg:flex-row gap-4 items-center">
+            <input
+              className="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-xl bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Search by startup, year, or layoff count..."
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+            <button
+              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-xl font-semibold hover:scale-105 transition-all"
+              onClick={fetchFromApi}
+              disabled={loading}
+            >
+              {loading ? "Loading..." : "Fetch Real Data"}
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+            Layoffs Overview
+          </h2>
+          <div style={{ height: 400 }}>
+            {isChartLoading ? (
+              <LoadingSpinner />
+            ) : (
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={chartData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="year" />
+                  <YAxis />
+                  <Tooltip content={<CustomTooltip />} />
+                  <Legend />
+                  {startups.map((s, i) => (
+                    <Bar
+                      key={s}
+                      dataKey={s}
+                      stackId="a"
+                      fill={COLOR_PALETTE.chart[i % COLOR_PALETTE.chart.length]}
+                    />
+                  ))}
+                </BarChart>
+              </ResponsiveContainer>
+            )}
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-xl p-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+            Detailed Data
+          </h2>
+          <div className="overflow-hidden rounded-xl border border-gray-200">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-gray-50">
+                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Year
+                  </th>
+                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Startup
+                  </th>
+                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Layoffs
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {filtered.map((data, index) => (
+                  <AnimatedTableRow key={index} data={data} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
