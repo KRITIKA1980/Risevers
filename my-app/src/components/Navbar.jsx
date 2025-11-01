@@ -35,7 +35,7 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-8 items-center text-sm sm:text-base">
-          <div className="relative" ref={dropdownRef}>
+          {/* <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setIsSchemeOpen(!isSchemeOpen)}
               className="text-[#1c2e57] font-medium hover:text-[#16325c] transition-colors flex items-center space-x-1 px-3 py-2 rounded-lg hover:bg-gray-50"
@@ -89,12 +89,18 @@ export default function Navbar() {
                 </Link>
               </div>
             )}
-          </div>
+          </div> */}
           <Link
             href="/mentor"
             className="text-[#1c2e57] font-medium hover:text-[#16325c] transition-colors px-3 py-2 rounded-lg hover:bg-gray-50"
           >
             Mentor
+          </Link>
+          <Link
+            href="/location"
+            className="text-[#1c2e57] font-medium hover:text-[#16325c] transition-colors px-3 py-2 rounded-lg hover:bg-gray-50"
+          >
+            Location
           </Link>
         </div>
 
