@@ -1,0 +1,889 @@
+[
+  
+  {
+    "id": 1,
+    "name": "TechSpark",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7333,
+    "longitude": 76.7794
+  },
+  {
+    "id": 2,
+    "name": "EcoWave",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7412,
+    "longitude": 76.7811
+  },
+  {
+    "id": 3,
+    "name": "EduPro",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7298,
+    "longitude": 76.7762
+  },
+  {
+    "id": 4,
+    "name": "UrbanHive",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7369,
+    "longitude": 76.7851
+  },
+  {
+    "id": 5,
+    "name": "HealthNest",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7405,
+    "longitude": 76.7733
+  },
+  {
+    "id": 6,
+    "name": "AgriTechGo",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7384,
+    "longitude": 76.7789
+  },
+  {
+    "id": 7,
+    "name": "SmartCart",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7315,
+    "longitude": 76.7827
+  },
+  {
+    "id": 8,
+    "name": "CodeNation",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7281,
+    "longitude": 76.7750
+  },
+  {
+    "id": 9,
+    "name": "GreenFuel",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7428,
+    "longitude": 76.7890
+  },
+  {
+    "id": 10,
+    "name": "QuickServe",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7390,
+    "longitude": 76.7801
+  },
+
+ 
+  {
+    "id": 40,
+    "name": "MediPulse",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7341,
+    "longitude": 76.7772
+  },
+
+  {
+    "id": 41,
+    "name": "Healthify",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6139,
+    "longitude": 77.2090
+  },
+  {
+    "id": 42,
+    "name": "FinMate",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6200,
+    "longitude": 77.2000
+  },
+  {
+    "id": 43,
+    "name": "EduBridge",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6252,
+    "longitude": 77.2150
+  },
+  {
+    "id": 44,
+    "name": "AgroSmart",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6187,
+    "longitude": 77.2132
+  },
+  {
+    "id": 45,
+    "name": "FoodNest",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6198,
+    "longitude": 77.2055
+  },
+  {
+    "id": 46,
+    "name": "CodeHub",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6120,
+    "longitude": 77.2151
+  },
+
+ 
+  {
+    "id": 100,
+    "name": "TechNest",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6244,
+    "longitude": 77.2022
+  }
+,
+  {
+    "id": 101,
+    "name": "Chandigarh Startup 1",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7305,
+    "longitude": 76.7704
+  },
+  {
+    "id": 102,
+    "name": "Chandigarh Startup 2",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7310,
+    "longitude": 76.7708
+  },
+  {
+    "id": 103,
+    "name": "Chandigarh Startup 3",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7315,
+    "longitude": 76.7712
+  },
+  {
+    "id": 104,
+    "name": "Chandigarh Startup 4",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7320,
+    "longitude": 76.7716
+  },
+  {
+    "id": 105,
+    "name": "Chandigarh Startup 5",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7325,
+    "longitude": 76.7720
+  },
+  {
+    "id": 106,
+    "name": "Chandigarh Startup 6",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7330,
+    "longitude": 76.7724
+  },
+  {
+    "id": 107,
+    "name": "Chandigarh Startup 7",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7335,
+    "longitude": 76.7728
+  },
+  {
+    "id": 108,
+    "name": "Chandigarh Startup 8",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7340,
+    "longitude": 76.7732
+  },
+  {
+    "id": 109,
+    "name": "Chandigarh Startup 9",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7345,
+    "longitude": 76.7736
+  },
+  {
+    "id": 110,
+    "name": "Chandigarh Startup 10",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7350,
+    "longitude": 76.7740
+  },
+  {
+    "id": 111,
+    "name": "Chandigarh Startup 11",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7355,
+    "longitude": 76.7744
+  },
+  {
+    "id": 112,
+    "name": "Chandigarh Startup 12",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7360,
+    "longitude": 76.7748
+  },
+  {
+    "id": 113,
+    "name": "Chandigarh Startup 13",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7365,
+    "longitude": 76.7752
+  },
+  {
+    "id": 114,
+    "name": "Chandigarh Startup 14",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7370,
+    "longitude": 76.7756
+  },
+  {
+    "id": 115,
+    "name": "Chandigarh Startup 15",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7375,
+    "longitude": 76.7760
+  },
+  {
+    "id": 116,
+    "name": "Chandigarh Startup 16",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7380,
+    "longitude": 76.7764
+  },
+  {
+    "id": 117,
+    "name": "Chandigarh Startup 17",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7385,
+    "longitude": 76.7768
+  },
+  {
+    "id": 118,
+    "name": "Chandigarh Startup 18",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7390,
+    "longitude": 76.7772
+  },
+  {
+    "id": 119,
+    "name": "Chandigarh Startup 19",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7395,
+    "longitude": 76.7776
+  },
+  {
+    "id": 120,
+    "name": "Chandigarh Startup 20",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7400,
+    "longitude": 76.7780
+  },
+  {
+    "id": 121,
+    "name": "Chandigarh Startup 21",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7405,
+    "longitude": 76.7784
+  },
+  {
+    "id": 122,
+    "name": "Chandigarh Startup 22",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7410,
+    "longitude": 76.7788
+  },
+  {
+    "id": 123,
+    "name": "Chandigarh Startup 23",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7415,
+    "longitude": 76.7792
+  },
+  {
+    "id": 124,
+    "name": "Chandigarh Startup 24",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7420,
+    "longitude": 76.7796
+  },
+  {
+    "id": 125,
+    "name": "Chandigarh Startup 25",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7425,
+    "longitude": 76.7800
+  },
+  {
+    "id": 126,
+    "name": "Chandigarh Startup 26",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7430,
+    "longitude": 76.7804
+  },
+  {
+    "id": 127,
+    "name": "Chandigarh Startup 27",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7435,
+    "longitude": 76.7808
+  },
+  {
+    "id": 128,
+    "name": "Chandigarh Startup 28",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7440,
+    "longitude": 76.7812
+  },
+  {
+    "id": 129,
+    "name": "Chandigarh Startup 29",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7445,
+    "longitude": 76.7816
+  },
+  {
+    "id": 130,
+    "name": "Chandigarh Startup 30",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7450,
+    "longitude": 76.7820
+  },
+  {
+    "id": 131,
+    "name": "Chandigarh Startup 31",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7455,
+    "longitude": 76.7824
+  },
+  {
+    "id": 132,
+    "name": "Chandigarh Startup 32",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7460,
+    "longitude": 76.7828
+  },
+  {
+    "id": 133,
+    "name": "Chandigarh Startup 33",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7465,
+    "longitude": 76.7832
+  },
+  {
+    "id": 134,
+    "name": "Chandigarh Startup 34",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7470,
+    "longitude": 76.7836
+  },
+  {
+    "id": 135,
+    "name": "Chandigarh Startup 35",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7475,
+    "longitude": 76.7840
+  },
+  {
+    "id": 136,
+    "name": "Chandigarh Startup 36",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7480,
+    "longitude": 76.7844
+  },
+  {
+    "id": 137,
+    "name": "Chandigarh Startup 37",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7485,
+    "longitude": 76.7848
+  },
+  {
+    "id": 138,
+    "name": "Chandigarh Startup 38",
+    "city": "Chandigarh",
+    "status": "closed",
+    "latitude": 30.7490,
+    "longitude": 76.7852
+  },
+  {
+    "id": 139,
+    "name": "Chandigarh Startup 39",
+    "city": "Chandigarh",
+    "status": "active",
+    "latitude": 30.7495,
+    "longitude": 76.7856
+  },
+  {
+    "id": 140,
+    "name": "Delhi Startup 1",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6106,
+    "longitude": 77.2005
+  },
+  {
+    "id": 141,
+    "name": "Delhi Startup 2",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6112,
+    "longitude": 77.2010
+  },
+  {
+    "id": 142,
+    "name": "Delhi Startup 3",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6118,
+    "longitude": 77.2015
+  },
+  {
+    "id": 143,
+    "name": "Delhi Startup 4",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6124,
+    "longitude": 77.2020
+  },
+  {
+    "id": 144,
+    "name": "Delhi Startup 5",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6130,
+    "longitude": 77.2025
+  },
+  {
+    "id": 145,
+    "name": "Delhi Startup 6",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6136,
+    "longitude": 77.2030
+  },
+  {
+    "id": 146,
+    "name": "Delhi Startup 7",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6142,
+    "longitude": 77.2035
+  },
+  {
+    "id": 147,
+    "name": "Delhi Startup 8",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6148,
+    "longitude": 77.2040
+  },
+  {
+    "id": 148,
+    "name": "Delhi Startup 9",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6154,
+    "longitude": 77.2045
+  },
+  {
+    "id": 149,
+    "name": "Delhi Startup 10",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6160,
+    "longitude": 77.2050
+  },
+  {
+    "id": 150,
+    "name": "Delhi Startup 11",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6166,
+    "longitude": 77.2055
+  },
+  {
+    "id": 151,
+    "name": "Delhi Startup 12",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6172,
+    "longitude": 77.2060
+  },
+  {
+    "id": 152,
+    "name": "Delhi Startup 13",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6178,
+    "longitude": 77.2065
+  },
+  {
+    "id": 153,
+    "name": "Delhi Startup 14",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6184,
+    "longitude": 77.2070
+  },
+  {
+    "id": 154,
+    "name": "Delhi Startup 15",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6190,
+    "longitude": 77.2075
+  },
+  {
+    "id": 155,
+    "name": "Delhi Startup 16",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6196,
+    "longitude": 77.2080
+  },
+  {
+    "id": 156,
+    "name": "Delhi Startup 17",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6202,
+    "longitude": 77.2085
+  },
+  {
+    "id": 157,
+    "name": "Delhi Startup 18",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6208,
+    "longitude": 77.2090
+  },
+  {
+    "id": 158,
+    "name": "Delhi Startup 19",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6214,
+    "longitude": 77.2095
+  },
+  {
+    "id": 159,
+    "name": "Delhi Startup 20",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6220,
+    "longitude": 77.2100
+  },
+  {
+    "id": 160,
+    "name": "Delhi Startup 21",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6226,
+    "longitude": 77.2105
+  },
+  {
+    "id": 161,
+    "name": "Delhi Startup 22",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6232,
+    "longitude": 77.2110
+  },
+  {
+    "id": 162,
+    "name": "Delhi Startup 23",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6238,
+    "longitude": 77.2115
+  },
+  {
+    "id": 163,
+    "name": "Delhi Startup 24",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6244,
+    "longitude": 77.2120
+  },
+  {
+    "id": 164,
+    "name": "Delhi Startup 25",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6250,
+    "longitude": 77.2125
+  },
+  {
+    "id": 165,
+    "name": "Delhi Startup 26",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6256,
+    "longitude": 77.2130
+  },
+  {
+    "id": 166,
+    "name": "Delhi Startup 27",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6262,
+    "longitude": 77.2135
+  },
+  {
+    "id": 167,
+    "name": "Delhi Startup 28",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6268,
+    "longitude": 77.2140
+  },
+  {
+    "id": 168,
+    "name": "Delhi Startup 29",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6274,
+    "longitude": 77.2145
+  },
+  {
+    "id": 169,
+    "name": "Delhi Startup 30",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6280,
+    "longitude": 77.2150
+  },
+  {
+    "id": 170,
+    "name": "Delhi Startup 31",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6286,
+    "longitude": 77.2155
+  },
+  {
+    "id": 171,
+    "name": "Delhi Startup 32",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6292,
+    "longitude": 77.2160
+  },
+  {
+    "id": 172,
+    "name": "Delhi Startup 33",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6298,
+    "longitude": 77.2165
+  },
+  {
+    "id": 173,
+    "name": "Delhi Startup 34",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6304,
+    "longitude": 77.2170
+  },
+  {
+    "id": 174,
+    "name": "Delhi Startup 35",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6310,
+    "longitude": 77.2175
+  },
+  {
+    "id": 175,
+    "name": "Delhi Startup 36",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6316,
+    "longitude": 77.2180
+  },
+  {
+    "id": 176,
+    "name": "Delhi Startup 37",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6322,
+    "longitude": 77.2185
+  },
+  {
+    "id": 177,
+    "name": "Delhi Startup 38",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6328,
+    "longitude": 77.2190
+  },
+  {
+    "id": 178,
+    "name": "Delhi Startup 39",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6334,
+    "longitude": 77.2195
+  },
+  {
+    "id": 179,
+    "name": "Delhi Startup 40",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6340,
+    "longitude": 77.2200
+  },
+  {
+    "id": 180,
+    "name": "Delhi Startup 41",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6346,
+    "longitude": 77.2205
+  },
+  {
+    "id": 181,
+    "name": "Delhi Startup 42",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6352,
+    "longitude": 77.2210
+  },
+  {
+    "id": 182,
+    "name": "Delhi Startup 43",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6358,
+    "longitude": 77.2215
+  },
+  {
+    "id": 183,
+    "name": "Delhi Startup 44",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6364,
+    "longitude": 77.2220
+  },
+  {
+    "id": 184,
+    "name": "Delhi Startup 45",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6370,
+    "longitude": 77.2225
+  },
+  {
+    "id": 185,
+    "name": "Delhi Startup 46",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6376,
+    "longitude": 77.2230
+  },
+  {
+    "id": 186,
+    "name": "Delhi Startup 47",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6382,
+    "longitude": 77.2235
+  },
+  {
+    "id": 187,
+    "name": "Delhi Startup 48",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6388,
+    "longitude": 77.2240
+  },
+  {
+    "id": 188,
+    "name": "Delhi Startup 49",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6394,
+    "longitude": 77.2245
+  },
+  {
+    "id": 189,
+    "name": "Delhi Startup 50",
+    "city": "Delhi",
+    "status": "closed",
+    "latitude": 28.6400,
+    "longitude": 77.2250
+  },
+  {
+    "id": 190,
+    "name": "Delhi Startup 51",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6406,
+    "longitude": 77.2255
+  },
+  {
+    "id": 191,
+    "name": "Delhi Startup 52",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6412,
+    "longitude": 77.2260
+  },
+  {
+    "id": 192,
+    "name": "Delhi Startup 53",
+    "city": "Delhi",
+    "status": "active",
+    "latitude": 28.6418,
+    "longitude": 77.2265
+  }
+]

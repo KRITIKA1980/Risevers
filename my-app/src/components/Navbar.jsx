@@ -48,6 +48,12 @@ export default function Navbar() {
           >
             Mentor
           </Link>
+          <Link
+            href="/location"
+            className="text-[#1c2e57] font-medium hover:text-[#16325c] transition-colors px-3 py-2 rounded-lg hover:bg-gray-50"
+          >
+            Location
+          </Link>
         </div>
 
         {/* Auth Buttons Desktop */}

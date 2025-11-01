@@ -1,7 +1,7 @@
 import React from 'react'
 import NewsSection from './home/Hero_Section'
 import AboutSection from './home/about'
-import ExpectedImpactSection from './home/benefits'
+import LayoffsPage from './home/benefits'
 import  FAQSection from './home/FAQSection'
 function page() {
   return (
@@ -9,7 +9,7 @@ function page() {
        
         <NewsSection/>
         <AboutSection/>
-        <ExpectedImpactSection/>
+        <LayoffsPage/>
         <FAQSection/>
     </div>
   )
