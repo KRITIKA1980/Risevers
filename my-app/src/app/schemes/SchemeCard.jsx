@@ -20,7 +20,9 @@ const SchemeCard = ({ scheme }) => {
     if (!url) return '/images/default-thumb.jpg';
     const regex = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/;
     const match = url.match(regex);
-    return match && match[1] ? `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg` : '/images/default-thumb.jpg';
+    return match && match[1]
+      ? `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg`
+      : '/images/default-thumb.jpg';
   };
 
   const getThumbnail = () => {
@@ -32,7 +34,7 @@ const SchemeCard = ({ scheme }) => {
 
   return (
     <>
-      <div className="bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 max-w-sm mx-4 my-4">
+      <div className="bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 max-w-sm mx-4 my-4 border border-gray-100">
         {/* Thumbnail / Video */}
         <div
           className="relative w-full h-48 cursor-pointer overflow-hidden"
@@ -41,31 +43,33 @@ const SchemeCard = ({ scheme }) => {
           <img
             src={getThumbnail()}
             alt={scheme.name}
-            className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
+            className="w-full h-full object-cover opacity-85 hover:opacity-100 transition-opacity duration-300"
             onError={handleImageError}
             loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-[#1c2e57] bg-opacity-80 rounded-full p-3 hover:bg-opacity-100 transition-all duration-300">
+            <div className="bg-[#FD8F02] bg-opacity-90 rounded-full p-3 hover:bg-opacity-100 transition-all duration-300">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="white">
                 <path d="M8 5v14l11-7z" />
               </svg>
             </div>
           </div>
-          <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-medium">
+          <div className="absolute top-2 right-2 bg-[#34312C] text-white px-2 py-1 rounded text-xs font-medium shadow-sm">
             Watch Video
           </div>
         </div>
 
         {/* Card Content */}
         <div className="p-5">
-          <h3 className="text-[#1c2e57] text-xl font-semibold mb-2">{scheme.name}</h3>
+          <h3 className="text-[#34312C] text-xl font-semibold mb-2">
+            {scheme.name}
+          </h3>
           <p className="text-gray-600 text-sm mb-4">{scheme.description}</p>
           <div className="flex flex-wrap gap-2 mb-4">
             {scheme.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-green-50 text-[#1c2e57] px-2 py-1 rounded text-xs font-medium"
+                className="bg-[#FD8F02]/10 text-[#34312C] px-2 py-1 rounded text-xs font-medium border border-[#FD8F02]/20"
               >
                 {tag}
               </span>
@@ -73,7 +77,7 @@ const SchemeCard = ({ scheme }) => {
           </div>
           <Link
             href={scheme.link}
-            className="inline-block bg-[#1c2e57] text-white px-5 py-2 rounded-lg font-medium hover:bg-[#2d3f6e] transition-colors duration-300 w-full text-center"
+            className="inline-block bg-[#FD8F02] text-white px-5 py-2 rounded-lg font-medium hover:bg-[#e27f00] transition-colors duration-300 w-full text-center shadow-sm"
           >
             View Details
           </Link>
@@ -92,7 +96,7 @@ const SchemeCard = ({ scheme }) => {
           >
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-600 z-10"
+              className="absolute top-4 right-4 bg-[#FD8F02] text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#e27f00] z-10"
             >
               ✕
             </button>
