@@ -20,14 +20,15 @@ const Popup = dynamic(
   () => import("react-leaflet").then((mod) => mod.Popup),
   { ssr: false }
 );
+
 // Custom icons
 const activeIcon = new L.Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/512/190/190411.png", // green
+  iconUrl: "https://cdn-icons-png.flaticon.com/512/190/190411.png", // green icon
   iconSize: [30, 30],
 });
 
 const closedIcon = new L.Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/512/190/190406.png", // red
+  iconUrl: "https://cdn-icons-png.flaticon.com/512/190/190406.png", // red icon
   iconSize: [30, 30],
 });
 
@@ -35,7 +36,7 @@ export default function LocationPage() {
   const [city, setCity] = useState("");
   const [allStartups, setAllStartups] = useState([]);
   const [filtered, setFiltered] = useState([]);
-  const [cityCoords, setCityCoords] = useState([20.5937, 78.9629]); // India default
+  const [cityCoords, setCityCoords] = useState([20.5937, 78.9629]); // Default: India center
 
   useEffect(() => {
     fetch("/startups.json")
@@ -49,7 +50,7 @@ export default function LocationPage() {
     );
     setFiltered(results);
 
-    // Get coordinates from OpenStreetMap
+    // Fetch coordinates from OpenStreetMap
     const geoRes = await fetch(
       `https://nominatim.openstreetmap.org/search?format=json&q=${city}`
     );
@@ -64,7 +65,10 @@ export default function LocationPage() {
 
   return (
     <div className="min-h-screen p-6 bg-gray-50">
-      <h1 className="text-2xl font-bold text-center mb-6">
+      <h1
+        className="text-2xl font-bold text-center mb-6"
+        style={{ color: "#34312C" }}
+      >
         🗺️ City-wise Startup Map
       </h1>
 
@@ -78,7 +82,8 @@ export default function LocationPage() {
         />
         <button
           onClick={handleSearch}
-          className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700"
+          className="text-white px-4 py-2 rounded-xl"
+          style={{ backgroundColor: "#FD8F02" }}
         >
           Search
         </button>
@@ -86,7 +91,7 @@ export default function LocationPage() {
 
       {filtered.length > 0 ? (
         <>
-          <div className="text-center mb-4">
+          <div className="text-center mb-4" style={{ color: "#34312C" }}>
             <p>
               📍 <strong>{city}</strong> me total{" "}
               <strong>{filtered.length}</strong> startups hain.
