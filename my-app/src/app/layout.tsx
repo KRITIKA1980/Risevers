@@ -1,6 +1,7 @@
 // File: src/app/layout.tsx h
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-white text-gray-900 font-sans">
         <Navbar />
         <main className="px-4 py-6 max-w-7xl mx-auto">{children}</main>
+        <Footer/>
       </body>
     </html>
   );
