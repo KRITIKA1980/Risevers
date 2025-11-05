@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import {
   FaArrowLeft, FaArrowRight, FaCalendarAlt, FaUser, 
   FaChartLine, FaBriefcase, FaHandshake, FaMapMarkerAlt,
-  FaUsers, FaRocket
+  FaUsers, FaRocket, FaExclamationTriangle
 } from 'react-icons/fa';
 
 export default function NewsSection() {
@@ -38,6 +38,18 @@ export default function NewsSection() {
     },
     {
       id: 3,
+      title: "Global Layoffs Fuel Startup Entrepreneurship",
+      excerpt: "3.5L+ professionals turn entrepreneurs as tech layoffs create new talent pool for startups.",
+      content: "Massive global layoffs in tech giants have created an unexpected opportunity for India's startup ecosystem. Over 3.5 lakh professionals are transitioning to entrepreneurship, bringing valuable corporate experience and skills to early-stage startups. This trend is particularly strong in Tier-2 cities where cost of living is lower.",
+      date: "June 8, 2025",
+      author: "Employment Trends",
+      category: "Layoffs",
+      image: "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2022/12/0/0/Business-Layoffs.jpg?ve=1&tl=1",
+      readTime: "5 min read",
+      icon: FaExclamationTriangle
+    },
+    {
+      id: 4,
       title: "Collaboration Gap Hinders Early-Stage Startups",
       excerpt: "70% of Indian startups fail within 5 years due to fragmented ecosystems and mentorship gaps.",
       content: "New research highlights the critical challenges facing Indian startups: limited collaboration between students, mentors, and innovators, coupled with insufficient structured guidance. The lack of location-based support systems is particularly affecting startups in emerging cities.",
@@ -49,7 +61,7 @@ export default function NewsSection() {
       icon: FaUsers
     },
     {
-      id: 4,
+      id: 5,
       title: "Geospatial Data Transforms Startup Discovery",
       excerpt: "Location-based analytics helping founders connect with local teammates and investors.",
       content: "Advanced mapping and clustering technologies are revolutionizing how startups discover opportunities. Heatmaps showing startup density, growth stages, and funding patterns are enabling smarter decisions for founders looking to build locally while thinking globally.",
