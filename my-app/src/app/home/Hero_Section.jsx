@@ -20,7 +20,7 @@ export default function NewsSection() {
       date: "Dec 15, 2024",
       author: "RiseVerse Insights",
       category: "Ecosystem",
-      image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=800&h=600&fit=crop&auto=format",
+      image: "https://businessconnectindia.in/wp-content/uploads/2023/06/Top-Startup-Cities-in-India-StartupTalky.jpg",
       readTime: "4 min read",
       icon: FaMapMarkerAlt
     },
@@ -32,7 +32,7 @@ export default function NewsSection() {
       date: "Dec 10, 2024",
       author: "Growth Analytics",
       category: "Growth",
-      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&auto=format",
+      image: "https://www.incentivesmart.com/wp-content/uploads/2024/01/staff-performance-768x384.jpg",
       readTime: "3 min read",
       icon: FaRocket
     },
@@ -56,7 +56,7 @@ export default function NewsSection() {
       date: "Dec 5, 2024",
       author: "Startup Research",
       category: "Challenges",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&auto=format",
+      image: "https://img.freepik.com/premium-photo/global-collaboration-technology-connections-business_628038-1171.jpg",
       readTime: "5 min read",
       icon: FaUsers
     },
@@ -68,7 +68,7 @@ export default function NewsSection() {
       date: "Nov 28, 2024",
       author: "Tech Innovation",
       category: "Technology",
-      image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&h=600&fit=crop&auto=format",
+      image: "https://img.freepik.com/premium-vector/map-with-pins-pins-map-with-pins-pins_912214-75288.jpg?w=2000",
       readTime: "3 min read",
       icon: FaChartLine
     }
