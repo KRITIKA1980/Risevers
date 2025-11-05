@@ -63,6 +63,11 @@ export default function LayoffsPage() {
   const [chartData, setChartData] = useState([]);
   const [categories, setCategories] = useState([]);
   const [query, setQuery] = useState("");
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     const { result, categories } = pivotDataToChart(raw);
@@ -179,23 +184,25 @@ export default function LayoffsPage() {
             Yearly Overview
           </h2>
           <div style={{ height: 400 }}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={chartData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#E5E5E5" />
-                <XAxis dataKey="year" stroke="#34312C" />
-                <YAxis stroke="#34312C" />
-                <Tooltip content={<CustomTooltip />} />
-                <Legend />
-                {categories.map((c, i) => (
-                  <Bar
-                    key={c}
-                    dataKey={c}
-                    stackId="a"
-                    fill={COLORS[i % COLORS.length]}
-                  />
-                ))}
-              </BarChart>
-            </ResponsiveContainer>
+            {isMounted && (
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={chartData}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#E5E5E5" />
+                  <XAxis dataKey="year" stroke="#34312C" />
+                  <YAxis stroke="#34312C" />
+                  <Tooltip content={<CustomTooltip />} />
+                  <Legend />
+                  {categories.map((c, i) => (
+                    <Bar
+                      key={c}
+                      dataKey={c}
+                      stackId="a"
+                      fill={COLORS[i % COLORS.length]}
+                    />
+                  ))}
+                </BarChart>
+              </ResponsiveContainer>
+            )}
           </div>
         </div>
       </div>
