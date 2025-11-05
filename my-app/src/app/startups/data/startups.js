@@ -14,8 +14,8 @@ export const startups = [
     logo: "https://www.godigitify.com/assets/GodigitifyCrop-B9R79AWi.png",
     coverImage: "https://dukhotfc1pmre.cloudfront.net/2022/04/iStock-465455404-2560x1707.jpg",
     founders: [
-      { name: "Sarah Chen", role: "CEO" },
-      { name: "Michael Rodriguez", role: "CTO" }
+      { name: "The Uniques", role: "Community" },
+      { name: "Sujal, Niraj, Abhishek, Amandeep", role: "CO-Founders" }
     ],
     location: "Chandigarh, India",
     tags: ["Digital Marketing", "Brand Strategy", "Web & App Development", "Performance Analytics"],
@@ -45,8 +45,8 @@ export const startups = [
     logo: "https://techlearns.in/Logo.png",
     coverImage: "https://techlearns.in/Banner%201.jpg",
     founders: [
-      { name: "Alex Thompson", role: "CEO" },
-      { name: "Priya Sharma", role: "COO" }
+      { name: "The Uniques", role: "Community" },
+      { name: "Sujal, Niraj, Abhishek, Amandeep", role: "CO-Founders" }
     ],
     location: "Sviet, Chandigarh",
     tags: ["Online Courses", "Full-Stack Dev", "SEO & Digital Marketing", "Career Support"],
@@ -76,8 +76,8 @@ export const startups = [
     logo: "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAum8fKWgPXlJfrKGuWUjb4n6NYRd3wE9DxCgy0v",
     coverImage: "https://dfwelectricianhvac.com/wp-content/uploads/2022/12/Electrical-Wiring.jpeg",
     founders: [
-      { name: "Dr. James Wilson", role: "CEO" },
-      { name: "Lisa Zhang", role: "CPO" }
+      { name: "The Uniques", role: "Community" },
+      { name: "Sujal, Niraj, Abhishek, Amandeep", role: "CO-Founders" }
     ],
     location: "Sviet, Chandigarh",
     tags: ["Local Search", "Business Directory", "SMB SaaS", "Verified Listings"],
