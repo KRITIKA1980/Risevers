@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import {
   FaArrowLeft, FaArrowRight, FaCalendarAlt, FaUser, 
-  FaChartLine, FaBriefcase, FaHandshake, FaArrowDown
+  FaChartLine, FaBriefcase, FaHandshake, FaMapMarkerAlt,
+  FaUsers, FaRocket, FaExclamationTriangle
 } from 'react-icons/fa';
 
 export default function NewsSection() {
@@ -13,51 +14,63 @@ export default function NewsSection() {
   const newsItems = [
     {
       id: 1,
-      title: "Startup Funding Winter Continues in 2024",
-      excerpt: "VC investments drop by 35% as investors become more cautious amid economic uncertainty.",
-      content: "The startup ecosystem is facing one of the toughest funding environments in recent years. Early-stage startups are particularly affected, with many struggling to secure Series A rounds. Investors are prioritizing profitability over growth metrics.",
+      title: "Tier-2 Cities Drive India's Startup Boom",
+      excerpt: "46 Indian cities now feature in global startup rankings as ecosystem expands beyond metro hubs.",
+      content: "Post-lockdown data reveals unprecedented growth in Tier-2 and Tier-3 cities, with startup activity spreading beyond traditional hubs like Bengaluru and Mumbai. Cities like Jaipur, Ahmedabad, and Kochi are emerging as new innovation centers, creating opportunities for localized startup ecosystems.",
       date: "Dec 15, 2024",
-      author: "Startup Insights",
-      category: "Funding",
-      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop",
+      author: "RiseVerse Insights",
+      category: "Ecosystem",
+      image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=800&h=600&fit=crop&auto=format",
       readTime: "4 min read",
-      icon: FaChartLine
+      icon: FaMapMarkerAlt
     },
     {
       id: 2,
-      title: "Tech Layoffs: 50,000 Jobs Cut in Q4 2024",
-      excerpt: "Major tech companies and startups continue workforce reductions to preserve cash.",
-      content: "The tech industry has seen massive layoffs as companies adjust to the new economic reality. Startups are focusing on lean operations, with many cutting non-essential roles and freezing hiring. Remote workers appear to be disproportionately affected.",
+      title: "India Set to Cross 1.5L Startups by 2025",
+      excerpt: "40% growth recorded in 2024 as professionals turn entrepreneurs amid global layoffs.",
+      content: "India's startup ecosystem is witnessing explosive growth, with projections showing 1.5 lakh+ startups by 2025. The trend is fueled by global layoffs driving professionals toward entrepreneurship and increased digital adoption across Tier-2 and Tier-3 cities.",
       date: "Dec 10, 2024",
-      author: "Tech Employment Watch",
-      category: "Employment",
-      image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=300&fit=crop",
+      author: "Growth Analytics",
+      category: "Growth",
+      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&auto=format",
       readTime: "3 min read",
-      icon: FaArrowDown
+      icon: FaRocket
     },
     {
       id: 3,
-      title: "Angel Investors Fill VC Funding Gap",
-      excerpt: "Individual investors step up to support early-stage startups as VCs pull back.",
-      content: "With traditional VC funding becoming scarce, angel investors are playing a crucial role in keeping the startup ecosystem alive. Many successful founders are now investing in the next generation of entrepreneurs, bringing valuable experience along with capital.",
-      date: "Dec 5, 2024",
-      author: "Investment Trends",
-      category: "Investors",
-      image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=300&fit=crop",
+      title: "Global Layoffs Fuel Startup Entrepreneurship",
+      excerpt: "3.5L+ professionals turn entrepreneurs as tech layoffs create new talent pool for startups.",
+      content: "Massive global layoffs in tech giants have created an unexpected opportunity for India's startup ecosystem. Over 3.5 lakh professionals are transitioning to entrepreneurship, bringing valuable corporate experience and skills to early-stage startups. This trend is particularly strong in Tier-2 cities where cost of living is lower.",
+      date: "June 8, 2025",
+      author: "Employment Trends",
+      category: "Layoffs",
+      image: "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2022/12/0/0/Business-Layoffs.jpg?ve=1&tl=1",
       readTime: "5 min read",
-      icon: FaHandshake
+      icon: FaExclamationTriangle
     },
     {
       id: 4,
-      title: "Mentorship Programs Gain Popularity",
-      excerpt: "Startups turn to experienced mentors for guidance in challenging times.",
-      content: "As navigating the current market becomes more complex, founders are increasingly seeking mentorship from seasoned entrepreneurs. Structured mentorship programs are showing significant impact on startup survival rates and fundraising success.",
+      title: "Collaboration Gap Hinders Early-Stage Startups",
+      excerpt: "70% of Indian startups fail within 5 years due to fragmented ecosystems and mentorship gaps.",
+      content: "New research highlights the critical challenges facing Indian startups: limited collaboration between students, mentors, and innovators, coupled with insufficient structured guidance. The lack of location-based support systems is particularly affecting startups in emerging cities.",
+      date: "Dec 5, 2024",
+      author: "Startup Research",
+      category: "Challenges",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&auto=format",
+      readTime: "5 min read",
+      icon: FaUsers
+    },
+    {
+      id: 5,
+      title: "Geospatial Data Transforms Startup Discovery",
+      excerpt: "Location-based analytics helping founders connect with local teammates and investors.",
+      content: "Advanced mapping and clustering technologies are revolutionizing how startups discover opportunities. Heatmaps showing startup density, growth stages, and funding patterns are enabling smarter decisions for founders looking to build locally while thinking globally.",
       date: "Nov 28, 2024",
-      author: "Startup Ecosystem",
-      category: "Mentorship",
-      image: "https://images.unsplash.com/photo-1551836026-d5c55ac8c73b?w=400&h=300&fit=crop",
+      author: "Tech Innovation",
+      category: "Technology",
+      image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&h=600&fit=crop&auto=format",
       readTime: "3 min read",
-      icon: FaBriefcase
+      icon: FaChartLine
     }
   ];
 
@@ -102,8 +115,6 @@ export default function NewsSection() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
-        
-
         <div className="grid lg:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
           {/* Left Side - Carousel */}
           <div className="relative h-80 w-full lg:h-96 lg:w-[30rem] mx-auto">
@@ -124,7 +135,8 @@ export default function NewsSection() {
                   <img 
                     src={slide.news.image} 
                     alt={slide.news.title} 
-                    className="w-full h-48 object-cover" 
+                    className="w-full h-48 object-cover"
+                    loading="lazy"
                   />
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-3">
