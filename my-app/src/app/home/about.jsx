@@ -9,7 +9,7 @@ const AboutSection = () => {
       id: 1,
       size: "w-28 h-28",
       position: "top-8 left-0",
-      label: "Founders",
+      label: "Early Stage Founders",
       image: "/images/founders.jpg",
       delay: 0,
       floating: {
@@ -22,7 +22,7 @@ const AboutSection = () => {
       id: 2,
       size: "w-32 h-32",
       position: "bottom-0 right-12",
-      label: "Investors",
+      label: "Angel Investors",
       image: "/images/investors.jpg",
       delay: 0.5,
       floating: {
@@ -35,7 +35,7 @@ const AboutSection = () => {
       id: 3,
       size: "w-24 h-24",
       position: "-left-12 top-1/2 ",
-      label: "Students",
+      label: "Student Innovators",
       image: "/images/students.jpg",
       delay: 0.2,
       floating: {
@@ -48,7 +48,7 @@ const AboutSection = () => {
       id: 4,
       size: "w-28 h-28",
       position: "-right-12 top-1/3 -translate-y-1/2",
-      label: "Mentors",
+      label: "Industry Mentors",
       image: "/images/mentors.jpg",
       delay: 0.7,
       floating: {
@@ -61,7 +61,7 @@ const AboutSection = () => {
       id: 5,
       size: "w-20 h-20",
       position: "top-0 right-24",
-      label: "Advisors",
+      label: "Tech Co-Founders",
       image: "/images/advisors.jpg",
       delay: 0.3,
       floating: {
@@ -74,7 +74,7 @@ const AboutSection = () => {
       id: 6,
       size: "w-24 h-24",
       position: "bottom-0 left-20",
-      label: "Incubators",
+      label: "Tier-2 City Startups",
       image: "/images/incubators.jpg",
       delay: 0.6,
       floating: {
@@ -95,7 +95,7 @@ const AboutSection = () => {
           </h2>
           <div className="w-20 h-1 bg-[#FD8F02] mx-auto mb-4"></div>
           <p className="text-xl text-[#34312C] max-w-3xl mx-auto">
-            Empowering India's Startup Ecosystem — One Idea at a Time.
+            Bridging the gap between local ecosystems and national startup network
           </p>
         </div>
 
@@ -103,33 +103,41 @@ const AboutSection = () => {
           {/* Left Text */}
           <div className="space-y-6">
             <p className="text-lg text-[#34312C] leading-relaxed">
-              Welcome to{" "}
-              <span className="font-semibold text-[#FD8F02]">RiseVerse</span>, a
-              platform built to ignite innovation, collaboration, and growth in
-              India's startup ecosystem. Whether you're a budding entrepreneur,
-              a mentor, or an investor, RiseVerse helps you connect, learn, and
-              scale your vision.
+              <span className="font-semibold text-[#FD8F02]">RiseVerse</span> is a unified platform that supports the startup journey from scratch to brand impact. We're solving the critical challenges facing India's 1.5M+ startups where 70% fail within 5 years due to fragmented ecosystems.
             </p>
 
             <p className="text-lg text-[#34312C] leading-relaxed">
-              Our mission is to simplify the journey from idea to impact by
-              providing access to mentorship, funding opportunities, and a
-              thriving startup community. At RiseVerse, we believe in turning
-              ambitions into action.
+              Our mission is to empower entrepreneurs with real-time insights, connections, and opportunities by creating a connected universe where every startup — from dorm-room ideas to global brands — can rise together.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
-                "Startup Mentorship",
-                "Networking Events",
-                "Funding Access",
-                "Startup Resources",
+                "Location-Based Insights",
+                "AI + Expert Mentorship",
+                "Funding Opportunities",
+                "Team Collaboration Hub"
               ].map((feature, i) => (
                 <div key={i} className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-[#FD8F02] rounded-full"></div>
                   <span className="text-[#34312C] font-medium">{feature}</span>
                 </div>
               ))}
+            </div>
+
+            {/* Stats Section */}
+            <div className="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-gray-200">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-[#FD8F02]">46+</div>
+                <div className="text-sm text-[#34312C]">Indian Cities</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-[#FD8F02]">1.5L+</div>
+                <div className="text-sm text-[#34312C]">Startups by 2025</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-[#FD8F02]">70%</div>
+                <div className="text-sm text-[#34312C]">Failure Rate We Tackle</div>
+              </div>
             </div>
           </div>
 
@@ -153,7 +161,7 @@ const AboutSection = () => {
             >
               <div className="text-center">
                 <div className="text-base font-bold">Who We</div>
-                <div className="text-base font-bold">Empower</div>
+                <div className="text-base font-bold">Connect</div>
               </div>
             </motion.div>
 
@@ -205,19 +213,6 @@ const AboutSection = () => {
               animate={{ rotate: 360 }}
               transition={{ duration: 100, repeat: Infinity, ease: "linear" }}
             />
-
-            {/* <motion.div
-              className="absolute inset-4 rounded-full border-[2px] border-dashed border-[#FD8F02]/50 shadow-[0_0_15px_rgba(253,143,2,0.3)]"
-              animate={{ rotate: -360 }}
-              transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
-            />
-
-            <motion.div
-              className="absolute inset-8 rounded-full border-[1.5px] border-[#FD8F02]/40 blur-[1px]"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-            /> */}
-
           </div>
         </div>
 
@@ -225,10 +220,10 @@ const AboutSection = () => {
         <div className="text-center mt-12">
           <div className="inline-flex flex-col sm:flex-row gap-4">
             <button className="px-8 py-3 bg-[#FD8F02] text-[#34312C] rounded-lg font-semibold hover:bg-[#e07e00] transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Join RiseVerse
+              Join Ecosystem
             </button>
             <button className="px-8 py-3 border-2 border-[#FD8F02] text-[#FD8F02] rounded-lg font-semibold hover:bg-[#FD8F02] hover:text-[#34312C] transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Meet Mentors
+              Explore Features
             </button>
           </div>
         </div>
